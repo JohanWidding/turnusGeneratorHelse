@@ -45,7 +45,11 @@ def plot_gantt(all_workers, workers, n_weeks):
     gnt.set_yticklabels(all_workers)
 
     # Setting ticks on x-axis
-    gnt.set_xticks([i * 48 for i in range(len(list(all_workers.values())[0])+1)])
+    _range = [i * 48 for i in range(len(list(all_workers.values())[0])+1)]
+    gnt.set_xticks(_range)
+    for i in range(48*4, 48*len(list(all_workers.values())[0])+1, (48*7)):
+        plt.axvspan(i, i + 48*3, facecolor='#414143', alpha=0.4)
+
 
     # Labelling ticks of x-axis
     gnt.set_xticklabels(weeks)
@@ -182,11 +186,16 @@ def combination_generator(n_on, employees, n_weeks, weekend_frequency):
 
     return shift
 
-def generate_work_shift(_):
-    """
-    Function to generate work shifts.
-    """
-    return combination_generator(n_on, workers, n_weeks, weekend_freq)
+def calculate_minimum_requirments(n_on, weekend_freq, full_time):
+    min_number_employees = n_on*weekend_freq
+
+    min_total_st_percentage = round(n_on*7/n_on/full_time*n_on, 2)
+
+    print(f"Det må være ansatt minst {min_number_employees} ansatte for at vaktskiftet skal gå opp")
+    print(f"Det må være totalt {min_total_st_percentage} summert stillingsprosentpoeng for at vaktskiftet skal gå opp")
+
+
+
 
 
 
@@ -195,6 +204,12 @@ if __name__ == "__main__":
     n_on = 2
     n_weeks = 4
     weekend_freq = 3
+    fulltime_hours = 37.5
+    shift_length_hours = 12.5
+    fulltime_shifts_in_week = fulltime_hours / shift_length_hours
+
+    calculate_minimum_requirments(n_on, weekend_freq, fulltime_shifts_in_week)
+    print(f"sum: {sum(list(workers.values()))}")
 
     valid = False
     iterations = 0
