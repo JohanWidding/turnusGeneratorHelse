@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="764f2328-aa08-4bd2-ace1-565e1525a150" name="Changes" comment="Initial draft">
-      <change afterPath="$PROJECT_DIR$/check_name_repetition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenEmployeeCombinations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleEmployee.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combination_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combination_validator_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combination_validator_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combination_validator_v3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_name_repetition.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_name_repetition.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,13 +46,42 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.combination_generator.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Johan&quot;
+    &quot;git-widget-placeholder&quot;: &quot;Johan&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jo280402/PycharmProjects/turnusGeneratorHelse&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jo280402\PycharmProjects\turnusGeneratorHelse" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.combination_generator">
+    <configuration name="combination_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="turnusGeneratorHelse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/combination_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="turnusGeneratorHelse" />
       <option name="ENV_FILES" value="" />
@@ -69,6 +104,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.combination_generator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -114,7 +154,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1714416488201</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Initial draft">
+      <option name="closed" value="true" />
+      <created>1714475794629</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1714475794629</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
